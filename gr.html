@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نشاط تصميم تفاعلي</title>
+    <style>
+        body {
+            background-color: #000; /* خلفية سوداء */
+            color: #ff69b4; /* لون نص وردي */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+        .gif-container {
+            margin-top: 20px;
+        }
+        .question {
+            margin: 30px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            color: #fff; /* لون النص الأبيض */
+            text-align: center;
+        }
+        .question img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            background-color: #444;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .options li:hover {
+            background-color: #555;
+        }
+        .options li.selected {
+            background-color: #ff69b4; /* اللون الوردي عند النقر */
+        }
+        #nameInput {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: 80%;
+            max-width: 300px;
+        }
+        #downloadBtn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="gif-container">
+            <img src="giphy.gif" alt="GIF" width="300" height="auto">
+        </div>
+        <h1>نشاط تصميم تفاعلي</h1>
+    </header>
+
+    <!-- السؤال 1 -->
+    <div class="question">
+        <h2>سؤال 1</h2>
+        <img src="1_jnYC88PBMXmfIL2GHbFgFA.jpg" alt="Question 1">
+        <ul class="options">
+            <li data-question="1" data-option="1" onclick="selectAnswer(this)">1. التوازن</li>
+            <li data-question="1" data-option="2" onclick="selectAnswer(this)">2. التباين</li>
+            <li data-question="1" data-option="3" onclick="selectAnswer(this)">3. المحاذاة</li>
+            <li data-question="1" data-option="4" onclick="selectAnswer(this)">4. التكرارية</li>
+            <li data-question="1" data-option="5" onclick="selectAnswer(this)">5. الوحدة</li>
+            <li data-question="1" data-option="6" onclick="selectAnswer(this)">6. الحركة</li>
+            <li data-question="1" data-option="7" onclick="selectAnswer(this)">7. التركيز</li>
+        </ul>
+    </div>
+
+    <!-- السؤال 2 -->
+    <div class="question">
+        <h2>سؤال 2</h2>
+        <img src="2020-11-02-13-18-11-913-5fa0071353548a13645d0de1.jpg" alt="Question 2">
+        <ul class="options">
+            <li data-question="2" data-option="1" onclick="selectAnswer(this)">1. التوازن</li>
+            <li data-question="2" data-option="2" onclick="selectAnswer(this)">2. التباين</li>
+            <li data-question="2" data-option="3" onclick="selectAnswer(this)">3. المحاذاة</li>
+            <li data-question="2" data-option="4" onclick="selectAnswer(this)">4. التكرارية</li>
+            <li data-question="2" data-option="5" onclick="selectAnswer(this)">5. الوحدة</li>
+            <li data-question="2" data-option="6" onclick="selectAnswer(this)">6. الحركة</li>
+            <li data-question="2" data-option="7" onclick="selectAnswer(this)">7. التركيز</li>
+        </ul>
+    </div>
+
+    <!-- السؤال 3 -->
+    <div class="question">
+        <h2>سؤال 3</h2>
+        <img src="alignment-in-design-modified.png" alt="Question 3">
+        <ul class="options">
+            <li data-question="3" data-option="1" onclick="selectAnswer(this)">1. التوازن</li>
+            <li data-question="3" data-option="2" onclick="selectAnswer(this)">2. التباين</li>
+            <li data-question="3" data-option="3" onclick="selectAnswer(this)">3. المحاذاة</li>
+            <li data-question="3" data-option="4" onclick="selectAnswer(this)">4. التكرارية</li>
+            <li data-question="3" data-option="5" onclick="selectAnswer(this)">5. الوحدة</li>
+            <li data-question="3" data-option="6" onclick="selectAnswer(this)">6. الحركة</li>
+            <li data-question="3" data-option="7" onclick="selectAnswer(this)">7. التركيز</li>
+        </ul>
+    </div>
+
+    <!-- السؤال 4 -->
+    <div class="question">
+        <h2>سؤال 4</h2>
+        <img src="aves.jpg" alt="Question 4">
+        <ul class="options">
+            <li data-question="4" data-option="1" onclick="selectAnswer(this)">1. التوازن</li>
+            <li data-question="4" data-option="2" onclick="selectAnswer(this)">2. التباين</li>
+            <li data-question="4" data-option="3" onclick="selectAnswer(this)">3. المحاذاة</li>
+            <li data-question="4" data-option="4" onclick="selectAnswer(this)">4. التكرارية</li>
+            <li data-question="4" data-option="5" onclick="selectAnswer(this)">5. الوحدة</li>
+            <li data-question="4" data-option="6" onclick="selectAnswer(this)">6. الحركة</li>
+            <li data-question="4" data-option="7" onclick="selectAnswer(this)">7. التركيز</li>
+        </ul>
+    </div>
+
+    <!-- السؤال 5 -->
+    <div class="question">
+        <h2>سؤال 5</h2>
+        <img src="Screenshot (553)-modified.png" alt="Question 5">
+        <ul class="options">
+            <li data-question="5" data-option="1" onclick="selectAnswer(this)">1. التوازن</li>
+            <li data-question="5" data-option="2" onclick="selectAnswer(this)">2. التباين</li>
+            <li data-question="5" data-option="3" onclick="selectAnswer(this)">3. المحاذاة</li>
+            <li data-question="5" data-option="4" onclick="selectAnswer(this)">4. التكرارية</li>
+            <li data-question="5" data-option="5" onclick="selectAnswer(this)">5. الوحدة</li>
+            <li data-question="5" data-option="6" onclick="selectAnswer(this)">6. الحركة</li>
+            <li data-question="5" data-option="7" onclick="selectAnswer(this)">7. التركيز</li>
+        </ul>
+    </div>
+
+    <!-- السؤال 6 -->
+    <div class="question">
+        <h2>سؤال 6</h2>
+        <img src="صورة3.png" alt="Question 6">
+        <ul class="options">
+            <li data-question="6" data-option="1" onclick="selectAnswer(this)">1. التوازن</li>
+            <li data-question="6" data-option="2" onclick="selectAnswer(this)">2. التباين</li>
+            <li data-question="6" data-option="3" onclick="selectAnswer(this)">3. المحاذاة</li>
+            <li data-question="6" data-option="4" onclick="selectAnswer(this)">4. التكرارية</li>
+            <li data-question="6" data-option="5" onclick="selectAnswer(this)">5. الوحدة</li>
+            <li data-question="6" data-option="6" onclick="selectAnswer(this)">6. الحركة</li>
+            <li data-question="6" data-option="7" onclick="selectAnswer(this)">7. التركيز</li>
+        </ul>
+    </div>
+
+    <!-- السؤال 7 -->
+    <div class="question">
+        <h2>سؤال 7</h2>
+        <img src="صورة3.png" alt="Question 7">
+        <ul class="options">
+            <li data-question="7" data-option="1" onclick="selectAnswer(this)">1. التوازن</li>
+            <li data-question="7" data-option="2" onclick="selectAnswer(this)">2. التباين</li>
+            <li data-question="7" data-option="3" onclick="selectAnswer(this)">3. المحاذاة</li>
+            <li data-question="7" data-option="4" onclick="selectAnswer(this)">4. التكرارية</li>
+            <li data-question="7" data-option="5" onclick="selectAnswer(this)">5. الوحدة</li>
+            <li data-question="7" data-option="6" onclick="selectAnswer(this)">6. الحركة</li>
+            <li data-question="7" data-option="7" onclick="selectAnswer(this)">7. التركيز</li>
+        </ul>
+    </div>
+
+    <!-- إدخال اسم الطالبة -->
+    <input type="text" id="nameInput" placeholder="أدخلي اسمك باللغة الإنجليزية">
+    <button id="downloadBtn" onclick="downloadPDF()">تحميل كملف PDF</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        let selectedOptions = {};
+
+        function selectAnswer(element) {
+            var questionNumber = element.getAttribute('data-question');
+            var optionNumber = element.getAttribute('data-option');
+
+            selectedOptions[questionNumber] = optionNumber;
+
+            var options = document.querySelectorAll(`.options li[data-question='${questionNumber}']`);
+            options.forEach(function(option) {
+                option.classList.remove('selected');
+            });
+
+            element.classList.add('selected');
+        }
+
+        function downloadPDF() {
+            const name = document.getElementById('nameInput').value.trim();
+            const englishNameRegex = /^[A-Za-z\s]+$/;
+
+            if (!name.match(englishNameRegex)) {
+                alert("يرجى إدخال اسمك باللغة الإنجليزية قبل تحميل ملف PDF.");
+                return;
+            }
+
+            if (Object.keys(selectedOptions).length !== 7) {
+                alert("يرجى الإجابة على جميع الأسئلة قبل تحميل ملف PDF.");
+                return;
+            }
+
+            var { jsPDF } = window.jspdf;
+            var doc = new jsPDF();
+
+            doc.setFontSize(14);
+            doc.text(`Name: ${name}`, 10, 10); // اسم الطالبة
+
+            for (var i = 1; i <= 7; i++) {
+                doc.text(`Question ${i}: Selected Answer ${selectedOptions[i]}`, 10, 20 + (i * 10)); // رقم السؤال والإجابة المختارة
+            }
+
+            doc.save("activity.pdf");
+        }
+    </script>
+
+</body>
+</html>
